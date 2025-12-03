@@ -1,0 +1,35 @@
+java bean : classes adhering to 3 constraints:
+
+1) have public default (no argument) constraints
+2) allow access to their properties using getters and setters
+3) implement serializable
+
+-------------------------------------------------------------------------------------
+
+spring bean : any java object that is manages by Spring
+
+-> it uses IoC Container to manage these objects
+
+-------------------------------------------------------------------------------------
+
+POJO (Plain Old Java Object) is just a regular Java object that follows
+standard Java convention.Think of it as a basic, normal class you could use anywhere,
+anytime, without needing to import special frameworks just to make it work.
+
+-------------------------------------------------------------------------------------
+
+Autowiring is a feature in the Spring Framework that allows the Spring IoC container
+to automatically resolve and inject the dependencies (collaborating beans) into
+another bean without you having to explicitly configure every connection manually.
+
+-------------------------------------------------------------------------------------
+
+What @Primary Does:
+@Primary tells the Spring Context: "If you have to guess which Bean to use,
+pick this one by default."
+
+-> when you have multiple instances of the same class (multiple beans), then which
+one to choose, this ambiguity is resolved using @Primary
+
+-------------------------------------------------------------------------------------
+

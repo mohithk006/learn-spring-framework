@@ -1,0 +1,14 @@
+Jakarta EE is built on top of the JDK.
+The JDK (specifically Java SE) provides the foundational Java language, the JVM, and core
+libraries necessary for any Java application to run.
+-------------------------------------------------------------------------------------------------
+The Jakarta EE APIs are external dependencies. You must explicitly include the necessary
+Jakarta EE libraries
+(e.g., the Servlet API JAR file) in your project's build path (like in a Maven or Gradle file),
+and you need an application server (like Tomcat, GlassFish, or WildFly) to provide the runtime
+environment for those APIs.
+-------------------------------------------------------------------------------------------------
+To summarize:
+A Jakarta EE application is a standard Java application that requires the JDK to compile and run,
+but it also requires external libraries and a compatible application server to function as an
+enterprise application.

@@ -1,0 +1,65 @@
+@Component
+Marks a class as a generic Spring-managed bean that should be detected during component scanning.
+To configure a Spring application means to define the necessary instructions for the Spring
+Context (the IoC Container) so that it can successfully build, manage, and wire together all the
+required objects (Beans) needed for the application to run.
+-------------------------------------------------------------------------------------------------
+@Service
+A specialization of @Component used to denote classes that hold business logic
+(a semantic alias for clarity).
+-------------------------------------------------------------------------------------------------
+@Repository
+A specialization of @Component used to denote classes that interact with databases
+(adds automatic persistence exception translation).
+-------------------------------------------------------------------------------------------------
+@Configuration
+Marks a class as the source of Java-based bean definitions and ensures inter-bean dependencies
+are managed correctly (proxied singletons).
+-------------------------------------------------------------------------------------------------
+@Bean
+Used within a @Configuration class to mark a method whose return value should be registered
+as a bean in the container.
+Job of @Bean: The job of the @Bean annotation is to tell Spring, "Run this method, and whatever
+Java object the method returns, please register that object as a Bean in the Context."
+-------------------------------------------------------------------------------------------------
+@ComponentScan
+Instructs Spring to search the current package and its sub-packages for classes marked with
+@Component, @Service, etc., and register them as beans.
+-------------------------------------------------------------------------------------------------
+@Autowired
+Marks a field, constructor, or setter method, telling Spring to automatically inject the correct
+dependent bean into that location.
+-------------------------------------------------------------------------------------------------
+@Primary
+Marks one bean as the default choice to be autowired when the container finds multiple beans of
+the same type.
+-------------------------------------------------------------------------------------------------
+@Qualifier
+Explicitly names exactly which specific bean to use at the point of injection, overriding
+any @Primary defaults.
+-------------------------------------------------------------------------------------------------
+@Lazy
+This annotation indicates whether a bean is to be lazily initialized.
+this can be used on a class which is annotated with @Component or methods with @Bean
+That means when we explicitly call the class or the method, then only that bean is initialized
+This is lazy Initialization. Default init is eager initialization
+-------------------------------------------------------------------------------------------------
+@Scope
+defines how often Spring creates a new instance of a bean (e.g., singleton means one shared
+instance, prototype means a new instance every time it's requested).
+Scopes applicable only for web aware SpringApplicationContext
+-> Request Scope - one object instance per single HTTP request
+-> Session Scope - one object instance per single HTTP session
+-> Application Scope - one object instance per Web App instance
+-> WebSocket Scope - one object instance per WebSocket instance
+-------------------------------------------------------------------------------------------------
+@PostConstruct
+As soon as the dependencies are autowired, spring would call the method which is annotated with
+@PostConstruct -> This basically means, do something post the constructor dependencies injection
+is done
+-------------------------------------------------------------------------------------------------
+@PreDestroy
+When you want to do something before the application bean is destroyed / terminated from context
+It is used on a method as a callback notification to signal that the instance is in the process
+of being removed from the container
+-> that method is typically used to release the resources that it has been holding
