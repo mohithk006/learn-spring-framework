@@ -24,7 +24,7 @@ public class PlayStationApp02Beans {
 
     public static void main(String[] args) {
 
-        // Component Scan annotation lets Spring know where to find PacMan bean in
+        // Component Scan annotation lets Spring know where to find the bean in the
         // container which manages, configures, and creates beans for us
         var context = new AnnotationConfigApplicationContext
                 (PlayStationApp02Beans.class);
@@ -32,7 +32,7 @@ public class PlayStationApp02Beans {
         context.getBean(GamingConsole.class).left();
 
         // spring autowired in to the gaming console without us
-        // having the need of creating the pacman instance
+        // having the need of creating the instance
         context.getBean(GameRunner.class).run();
     }
 }
