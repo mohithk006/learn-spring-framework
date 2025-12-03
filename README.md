@@ -23,7 +23,7 @@ This repository contains my hands-on practice and notes from learning the Spring
 - **screenshots/** – Udemy course presentation slides.
 - Notes summarizing Spring annotations, dependency injection, JavaBeans, Jakarta EE basics, and the differences between XML and annotation-based configurations.
 
-## 🚀 What This Repo Demonstrates
+## What This Repo Demonstrates
 - Core Spring annotations (@Component, @Bean, @Configuration, @Autowired)
 - Dependency Injection (constructor, setter & field)
 - ApplicationContext usage
