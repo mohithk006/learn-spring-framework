@@ -18,6 +18,8 @@ class DependencyUser {
     @Autowired
     Dependency2 d2;
 
+    // The below 2 setters are not necessary as wiring the fields is automatically done by spring context
+
     public void setD2(Dependency2 d2) {
         this.d2 = d2;
     }
