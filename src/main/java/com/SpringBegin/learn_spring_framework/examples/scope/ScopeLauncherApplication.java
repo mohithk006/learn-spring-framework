@@ -33,7 +33,7 @@ public class ScopeLauncherApplication {
 
         /*
         * Below we can see that NormalClass has only one instance initialized but
-        * prototype class has various objects created in the heap
+        * prototype class has various objects created in the spring context
         * when you want different bean instance to be created everytime you refer it
         * then set the scope of the component as prototype*/
         System.out.println(context.getBean(NormalClass.class));
