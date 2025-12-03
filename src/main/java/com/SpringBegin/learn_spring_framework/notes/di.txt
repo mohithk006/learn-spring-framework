@@ -4,3 +4,4 @@ DIFFERENT TYPES OF DEPENDENCY INJECTION:
 2) SETTER BASED
 3) FIELD BASED
 
+-> Inversion of Control (IoC) is a design principle used in object-oriented programming where the control of object creation and dependency management is transferred from the application code to an external framework or container
