@@ -25,6 +25,8 @@ Java object the method returns, please register that object as a Bean in the Con
 @ComponentScan
 Instructs Spring to search the current package and its sub-packages for classes marked with
 @Component, @Service, etc., and register them as beans.
+Inside a @Configuration class, if you don’t use @ComponentScan, Spring will not automatically 
+scan anything — not even the current package.
 -------------------------------------------------------------------------------------------------
 @Autowired
 Marks a field, constructor, or setter method, telling Spring to automatically inject the correct
