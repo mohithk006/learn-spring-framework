@@ -14,12 +14,14 @@ This repository contains my hands-on practice and notes from learning the Spring
   - `ContraGame`, `MarioGame`, `PacManGame`
   - `GamingConsole` interface
   - `GameRunner` orchestrating gameplay via injected implementations
+ 
+- **playstations/** – Custom configurations and bean setup (`PlayStationConfig`, `PlayStationAppBeans`).
 
 - **helloworld_start/** – Beginner-level Spring configuration and bean definitions.
 
 ### **notes/**
 - **screenshots/** – Udemy course presentation slides.
-- **playstations/** – Custom configurations and bean setup examples (`PlayStationConfig`, `PlayStationAppBeans`).
+- Notes summarizing Spring annotations, dependency injection, JavaBeans, Jakarta EE basics, and the differences between XML and annotation-based configurations.
 
 ## 🚀 What This Repo Demonstrates
 - Core Spring annotations (@Component, @Bean, @Configuration, @Autowired)
